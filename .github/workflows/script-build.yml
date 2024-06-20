@@ -1,0 +1,16 @@
+name: Sanity Build  #name can be anything
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+
+        #Add below lines when want to run only specfic test script
+        with:
+          command: npm run test:test2_yatra 
