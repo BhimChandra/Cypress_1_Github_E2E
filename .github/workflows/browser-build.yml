@@ -13,4 +13,4 @@ jobs:
 
         #Add below lines when want to run test script on specfic browser
         with:
-          command: firefox
+          browser: chrome
