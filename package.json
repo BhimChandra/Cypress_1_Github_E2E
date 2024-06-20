@@ -4,8 +4,8 @@
   "description": "Adding and pushing code into Github",
   "main": "index.js",
   "scripts": {
-    "test:test1_opensite": "npx cypress run --spec cypress/e2e/tests/test1_opensite.cy.js --browser chrome --headed",
-    "test:test2_yatra": "npx cypress run --spec cypress/e2e/tests/test2_yatra.cy.js --browser chrome --headed",
+    "test:test1_opensite": "npx cypress run --spec cypress/e2e/tests/test1_opensite.cy.js",
+    "test:test2_yatra": "npx cypress run --spec cypress/e2e/tests/test2_yatra.cy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
